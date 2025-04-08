@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title><%= headTitle %></title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<%- include('partials/navigation', { menuLinks: menuLinks, activeLinkPath: activeLinkPath }) %>
+<main>
+  <h1 class="heading">Add Product</h1>
+  <form class="form" method="POST" action="/products/add">
+    <div class="form_group">
+      <label class="form_label">Name</label>
+      <input class="form_input" type="text" name="name" required>
+    </div>
+    <div class="form_group">
+      <label class="form_label">Description</label>
+      <input class="form_input" type="text" name="description" required>
+    </div>
+    <button class="button" type="submit">Add Product</button>
+  </form>
+</main>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "laboratory-classes-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "W trakcie pracy nad zadaniami (ćwiczeniami), będziecie spotykać się z różnymi pomocnikami, którzy będą wskazywać, co należy zrobić w danym fragmencie kodu. Im dalsze ćwiczenie, tym rzadziej będą się pojawiać. Oto krótka charakterystyka każdego z nich:",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -10,10 +10,20 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "laboratory-classes-3": "file:"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaTimurkyzy/lab3_diana.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/DianaTimurkyzy/lab3_diana/issues"
+  },
+  "homepage": "https://github.com/DianaTimurkyzy/lab3_diana#readme"
 }

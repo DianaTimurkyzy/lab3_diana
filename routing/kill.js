@@ -1,12 +1,14 @@
-const express = require("express");
-
-const logger = require("../utils/logger");
-
+const express = require('express');
 const router = express.Router();
+const { LOGOUT_LINKS } = require('../constants/navigation');
 
-router.get("/", () => {
-  logger.getProcessLog();
-  process.exit();
+router.get('/', (req, res) => {
+  res.render('logout', {
+    headTitle: 'Shop - Logout',
+    path: '/kill',
+    menuLinks: LOGOUT_LINKS,
+    activeLinkPath: '/kill'
+  });
 });
 
 module.exports = router;
